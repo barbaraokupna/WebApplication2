@@ -2,9 +2,9 @@ version: 0.0
 os: windows
 files:
   - source: \
-    destination: C:\windowsservice
+    destination: C:\apps\WebApplication2
 hooks:
   BeforeInstall:
-    - location: WebApplication2\deployscripts\afterinstall.bat
+    - location: deployscripts\beforeinstall.bat
   ApplicationStart:
-    - location: WebApplication2\deployscripts\windowsservicestart.bat
+    - location: deployscripts\windowsservicestart.bat
